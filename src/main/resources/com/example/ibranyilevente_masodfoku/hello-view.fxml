@@ -1,35 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Button?>
-<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal"
-          xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ibranyilevente_masodfoku.HelloController">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ibranyilevente_masodfoku.HelloController">
     <rowConstraints>
-        <RowConstraints minHeight="10.0" prefHeight="30.0"/>
-        <RowConstraints minHeight="10.0" prefHeight="30.0"/>
-        <RowConstraints minHeight="10.0" prefHeight="30.0"/>
-        <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
     </rowConstraints>
     <columnConstraints>
-        <ColumnConstraints minWidth="45.0" prefWidth="60.0"/>
-        <ColumnConstraints minWidth="45.0" prefWidth="50.0"/>
-        <ColumnConstraints minWidth="45.0" prefWidth="50.0"/>
-        <ColumnConstraints minWidth="45.0" prefWidth="50.0"/>
-        <ColumnConstraints minWidth="45.0" prefWidth="50.0"/>
-        <ColumnConstraints minWidth="45.0" prefWidth="50.0"/>
+        <ColumnConstraints minWidth="45.0" prefWidth="60.0" />
+        <ColumnConstraints minWidth="45.0" prefWidth="50.0" />
+        <ColumnConstraints minWidth="45.0" prefWidth="50.0" />
+        <ColumnConstraints minWidth="45.0" prefWidth="50.0" />
+        <ColumnConstraints minWidth="45.0" prefWidth="50.0" />
+        <ColumnConstraints minWidth="45.0" prefWidth="50.0" />
     </columnConstraints>
     <children>
-        <TextArea fx:id="taA" prefHeight="200.0" prefWidth="200.0"/>
-        <Label text="x^2" GridPane.columnIndex="1"/>
-        <Label text="x+" GridPane.columnIndex="3"/>
-        <Label text="=0" GridPane.columnIndex="5"/>
-        <Label fx:id="lblXFirst" text="x1=" GridPane.columnSpan="4" GridPane.rowIndex="2"/>
-        <Label fx:id="lblXSecond" text="x2=" GridPane.columnSpan="4" GridPane.rowIndex="3"/>
-        <TextArea fx:id="taB" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2"/>
-        <Button fx:id="btnSzamol" mnemonicParsing="false" text="Számol" GridPane.columnSpan="2" GridPane.rowIndex="1"/>
-        <TextArea fx:id="taC" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4"/>
+        <TextArea fx:id="taA" prefHeight="200.0" prefWidth="200.0" />
+        <Label text="x^2" GridPane.columnIndex="1" />
+        <Label text="x+" GridPane.columnIndex="3" />
+        <Label text="=0" GridPane.columnIndex="5" />
+        <Label fx:id="lblXFirst" text="x1=" GridPane.columnSpan="4" GridPane.rowIndex="2" />
+        <Label fx:id="lblXSecond" text="x2=" GridPane.columnSpan="4" GridPane.rowIndex="3" />
+        <TextArea fx:id="taB" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" />
+        <Button fx:id="btnSzamol" mnemonicParsing="false" onAction="#kiszamol" text="Számol" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+        <TextArea fx:id="taC" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" />
     </children>
 </GridPane>
